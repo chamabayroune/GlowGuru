@@ -1,0 +1,247 @@
+.home img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+.home {
+    margin-bottom: 50px;
+}
+.title{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.product-grid {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.product-grid .product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-grid .product-image a.image {
+    display: block;
+}
+
+.product-grid.new .product-image a.image:before,
+.product-grid .product-image a.image:after {
+    content: '';
+    background-color: #ffd800;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+}
+
+.product-grid .product-image a.image:after {
+    height: 120px;
+    width: 120px;
+    right: auto;
+    left: -120px;
+    top: auto;
+    bottom: -120px;
+    transition: all 0.3s ease;
+}
+
+.product-grid:hover .product-image a.image:after {
+    left: -25px;
+    bottom: -40px;
+}
+
+.product-grid .product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-grid .product-new-label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+
+.product-grid .product-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+}
+
+.product-grid .product-links li {
+    margin: 0 0 4px;
+    transform: translateX(100px);
+    transition: all 0.5s ease 0s;
+}
+
+.product-grid:hover .product-links li {
+    transform: translateX(0);
+}
+
+.product-grid:hover .product-links li:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.product-grid:hover .product-links li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.product-grid .product-links li:last-child {
+    margin: 0;
+}
+
+.product-grid .product-links li a {
+    color: #000;
+    background: rgba(255, 216, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    transition: all 200ms ease 0s;
+}
+
+.product-grid .product-links li a:hover {
+    background: #ffd800;
+}
+
+.product-grid .product-links li a:before,
+.product-grid .product-links li a:after {
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transition: all 0.3s ease;
+}
+
+.product-grid .product-links li a:after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border-radius: 0;
+    transform: translateY(-50%) rotate(45deg);
+    right: 58px;
+    z-index: -1;
+}
+
+.product-grid .product-links li a:hover:before,
+.product-grid .product-links li a:hover:after {
+    visibility: visible;
+}
+
+.product-grid .product-links li a:hover:before {
+    right: 55px;
+}
+.product-grid .product-links li a:hover:after {
+    right: 53px;
+}
+
+.product-grid .price {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.product-grid .product-content {
+    padding: 12px 0 0;
+    position: relative;
+}
+
+.product-grid .title-card {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+.product-grid .title-card a {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.product-grid .title-card a:hover {
+    color: #666;
+}
+
+.product-content .rating {
+    padding: 0;
+    margin: 0 0 7px 0;
+    list-style: none;
+}
+
+.product-grid .rating li {
+    color: #ffba00;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.product-grid .rating li.disable {
+    color: #b6b3b0;
+}
+
+.pic-1 {
+    height: 345px !important;
+}
+
+@media screen and (max-width:990px) {
+    .product-grid {
+        margin: 0 0 30px;
+    }
+}
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.syop{
+width: 100%;
+height: 45em;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+.title{
+    top: 40%;
+    right: 6%;
+} 
+
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    .paragagraphe text-center{
+       
+        padding-top: 50px;
+       
+    
+  
+
+
+    
