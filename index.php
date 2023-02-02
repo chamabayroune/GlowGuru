@@ -96,14 +96,14 @@ $afficherPro = $products->afficher();
             </div>
         </div>
         <?php endforeach;?>
-    <p class="paragagraphe text-center"  >
+    <p class="paragagraphe text-center text-white" id="para"  >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-        distinctio earum repellat quaerat voluptatibus placeat nam,
+        distinctio earum repellat quaerat voluptatibus placeat nam,<br>
         commodi optio pariatur est quia magnam eum harum corrupti
         dicta, aliquam sequi voluptate quas.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+        Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Deleniti
         , exercitationem? Ducimus, alias minima? Obcaecati explicabo vitae reiciendis,
-         et porro labore molestiae, eveniet nobis numquam sint aperiam! Aspernatur quia
+         et porro labore molestiae, <br> eveniet nobis numquam sint aperiam! Aspernatur quia
           vel blanditiis?
     </p>
     
@@ -118,37 +118,39 @@ $afficherPro = $products->afficher();
 <div class="team">
     <div class="lightbox">
         <div class="multi-carousel">
-          <div class="multi-carousel-inner">
+          <div id="sectionimg" class="d-flex multi-carousel-inner">
             <div class="multi-carousel-item">
               <img
+              id="img"
                 src="./assets/imgs/dior.jfif"
                 data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
                 alt="Table Full of Spices"
-                class="w-100"
               />
             </div>
             <div class="multi-carousel-item">
               <img
+              id="img"
+              style="width: 10em !important;"
                 src="./assets/imgs/goccci.jfif"
                 data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
                 alt="Winter Landscape"
-                class="w-100"
               />
             </div>
             <div class="multi-carousel-item">
-              <img
+              <img style=" width: 14em;
+    margin-top: 2em;"
                 src="./assets/imgs/nyx.png"
                 data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
                 alt="View of the City in the Mountains"
-                class="w-100"
               />
             </div>
             <div class="multi-carousel-item">
               <img
+              id="img"
+              style=" width:11em !important"
                 src="./assets/imgs/ysl.jfif"
                 data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp"
                 alt="Place Royale Bruxelles"
-                class="w-100"
               />
             </div>
           </div>
